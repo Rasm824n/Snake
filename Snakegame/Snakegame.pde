@@ -3,7 +3,7 @@ String direction = "right";
 
 //ArrayList<int[]> s = new ArrayList<int[]>();
 void setup(){
- size(300,300);
+ size(600,600);
  frameRate(10);
  initgame();
 }
@@ -46,18 +46,18 @@ void drawGrid(){
 
 void moveSnake(){
   if(direction =="up")
-    snake[1]-=10;
+    snake[1]-=20;
   else if(direction=="down")
-    snake[1]+=10;
+    snake[1]+=20;
   else if(direction=="left")
-    snake[0]-=10;
+    snake[0]-=20;
   else if(direction=="right")
-    snake[0]+=10;
+    snake[0]+=20;
 }
 
 void drawSnake(){
   fill(random(0,256),random(0,256),random(0,256));
-  rect(snake[0],snake[1],10,10); 
+  rect(snake[0],snake[1],20,20); 
   fill(0,0,0);
 }
 
